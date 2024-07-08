@@ -1,0 +1,165 @@
+img {
+  vertical-align: middle;
+}
+
+.container {
+  margin: 0;
+  margin-left: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  width: 70vw;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.navigation {
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  /* top: 20%; */
+  width: auto;
+  /* padding: 16px; */
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+  transition: all 0.4s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  /* scale: 1.1; */
+  margin: 10px 0 0;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.numbertext {
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 26px;
+  padding: 0;
+  font-weight: 600;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Container for image text */
+.caption-container {
+  /* width: 100%; */
+  width: 55vw;
+  border-radius: 30px;
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+  padding: 2px 16px;
+  color: white;
+}
+
+#caption {
+  margin: 0;
+  font-size: 24px;
+  padding: 8px 12px;
+  font-weight: 400;
+  letter-spacing: 1.07px;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.row {
+  margin: 0;
+  padding: 3.5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-end; */
+  width: 25%;
+  /* max-width: 400px; */
+  gap: 25px;
+  overflow-x: hidden;
+}
+
+video,
+img {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+/* Six columns side by side */
+.column {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  cursor: pointer;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+
+.column video,
+.column img {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Add a transparency effect for thumnbail images */
+/* .demo {
+    width: 100%;
+    opacity: 0.8;
+  } */
+
+.column:hover,
+.demo:hover {
+  opacity: 1;
+}
+.active {
+  opacity: 1;
+  .caption {
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+  }
+  video,
+  .image {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
+  }
+}
