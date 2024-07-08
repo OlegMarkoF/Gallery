@@ -179,7 +179,6 @@ img {
   .navigation {
     width: 90%;
   }
-  
 
   .prev,
   .next {
@@ -192,5 +191,4 @@ img {
     width: 90vw;
     border-radius: 20px;
   }
-  
 }
