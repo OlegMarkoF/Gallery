@@ -5,41 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="slider.css" />
-    
   </head>
   <body>
-    <a class="back" href="./index.html">Назад</a>
-    <div class="container">
-      <h1 class="block-title">Видеогалерея</h1>
-      <div class="numbertext"></div>
+    <main class="content">
+      <a class="back" href="./index.html">Назад</a>
+      <div class="container">
+        <h1 class="block-title">Видеогалерея</h1>
+        <div class="numbertext"></div>
 
-      <div class="mySlides">
-        <video
-          poster='https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          class="video"
-          preload="none"
-          src=""
-          type="video/mp4"
-          controls
-          autoplay
-          muted
-        ></video>
+        <div class="mySlides">
+          <video
+            poster="https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="video"
+            preload="none"
+            src=""
+            type="video/mp4"
+            controls
+            autoplay
+            muted
+          ></video>
+        </div>
+
+        <nav class="navigation">
+          <a class="prev">❮</a>
+          <a class="next">❯</a>
+        </nav>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
       </div>
-  
-      <nav class="navigation">
-        <a class="prev" >❮</a>
-        <a class="next" >❯</a>
-      </nav>
-  
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-    </div>
-  
-    <div class="row">
-    </div>
-  
+
+      <div class="row"></div>
+    </main>
+
     <script src="./scripts/script.js"></script>
     <script src="./scripts/showSlides.js"></script>
   </body>
-  </html>
+</html>

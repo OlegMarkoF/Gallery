@@ -33,19 +33,16 @@ body {
   font-family: sans-serif; 
   overflow: hidden;
 }
-/* body:before {
-  content: "";
-  display: block;
-  margin: 0;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-} */
+ 
+.content {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
 .back {
   margin: 0;
   padding: 0;
@@ -72,8 +69,6 @@ body {
 .video {
   border-radius: 30px;
   width: 80%;
-  /* height: 100%; */
-  /* border: 2px solid rgba(100, 100, 245, 0.7); */
   background: rgba(80, 79, 79, 0.9);
 }
 
@@ -223,4 +218,35 @@ li {
   justify-content: center;
   /* padding-top: 370px;
   padding-left: 45%; */
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 50px 0 0;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .block-title {
+    font-weight: 400;
+  }
+  .caption {
+    width: 90%;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  .video {
+    border-radius: 20px;
+    width: 90%;
+  }
+  
 }
